@@ -162,20 +162,32 @@
 #             break
 #         break
 
-while True:
-    number = input("Введи число в діапазоні 1-999: ")
-    if not number.isdigit() or int(number) < 1 or int(number) > 1000:
-        print("Ввели не число або число поза межами діапазону. Спробуйте ще раз")
-        continue
+# while True:
+    # number = input("Введи число в діапазоні 1-999: ")
+    # if not number.isdigit() or int(number) < 1 or int(number) > 1000:
+    #     print("Ввели не число або число поза межами діапазону. Спробуйте ще раз")
+    #     continue
 
-    number = int(number)
-    if number < 10:
-        name = "Одноцифрове"
-    elif number < 100:
-        name = "Двоцифрове"
-    else:
-        name = "Трицифрове"
+    # number = int(number)
+    # if number < 10:
+    #     name = "Одноцифрове"
+    # elif number < 100:
+    #     name = "Двоцифрове"
+    # else:
+    #     name = "Трицифрове"
 
-    is_odd = True if number % 2 == 0 else False
-    print(f"Число {"парне" if is_odd else "непарне"} {name.lower()}")
+    # is_odd = True if number % 2 == 0 else False
+    # print(f"Число {"парне" if is_odd else "непарне"} {name.lower()}")
     # print(f"Число {"парне" if number % 2 == 0 else "непарне"} {name.lower()}")
+
+
+text = input("Введіть рядок: ")
+
+letter = text[0]
+count = 0
+
+for i in text:
+    if i == letter:
+        count += 1
+
+print(count)
