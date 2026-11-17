@@ -191,3 +191,6 @@ for i in text:
         count += 1
 
 print(count)
+
+
+print
